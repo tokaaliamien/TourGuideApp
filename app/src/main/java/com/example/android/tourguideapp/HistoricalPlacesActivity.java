@@ -15,8 +15,8 @@ public class HistoricalPlacesActivity extends AppCompatActivity {
         setContentView(R.layout.activity_historical_places);
 
         ArrayList<Place> places=new ArrayList<>();
-        places.add(new Place("Bibliotheca Alexandrina"," Al Azaritah WA Ash Shatebi, Qesm Bab Sharqi",R.drawable.places_bibliotheca_alexandrina));
-        places.add(new Place("Citadel of Qaitbay", "As Sayalah Sharq, Qesm Al Gomrok", R.drawable.places_citadel_qaitbay));
+        places.add(new Place(getString(R.string.places_bibliotheca_alexandrina_name), getString(R.string.places_bibliotheca_alexandrina_add), R.drawable.places_bibliotheca_alexandrina));
+        places.add(new Place(getString(R.string.places_citadel_of_qaitbay_name), getString(R.string.places_citadel_of_qaitbay_add), R.drawable.places_citadel_qaitbay));
 
 
         PlaceAdaptor adaptor =new PlaceAdaptor(HistoricalPlacesActivity.this,places);

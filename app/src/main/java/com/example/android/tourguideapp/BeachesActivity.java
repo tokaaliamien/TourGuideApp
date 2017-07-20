@@ -14,7 +14,7 @@ public class BeachesActivity extends AppCompatActivity {
         setContentView(R.layout.activity_beaches);
 
         ArrayList<Place> places = new ArrayList<>();
-        places.add(new Place("Stanli Beach", "Qism Sidi Gabir"));
+        places.add(new Place(getString(R.string.beaches_stanli_beach_name), getString(R.string.beaches_stanli_beach_add)));
 
         PlaceAdaptor adaptor = new PlaceAdaptor(this, places);
 

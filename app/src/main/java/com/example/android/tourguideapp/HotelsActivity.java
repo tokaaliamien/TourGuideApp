@@ -14,8 +14,8 @@ public class HotelsActivity extends AppCompatActivity {
         setContentView(R.layout.activity_hotels);
 
         ArrayList<Place> places = new ArrayList<>();
-        places.add(new Place("Four Seasons Hotel", " 399 El Geish Road San Stefano", "1-866-599-6674", 4.8f));
-        places.add(new Place("Romance Alexandria Corniche", "303 Tareek El Gueish Saba Pasha", "1-866-599-6674", 3.6f));
+        places.add(new Place(getString(R.string.hotels_four_seasons_hotel_name), getString(R.string.hotels_four_seasons_hotel_add), getString(R.string.hotels_four_seasons_hotel_phone), 4.8f));
+        places.add(new Place(getString(R.string.hotels_romance_alexandria_corniche_name), getString(R.string.hotels_romance_alexandria_corniche_add), getString(R.string.hotels_romance_alexandria_corniche_phone), 3.6f));
 
         PlaceAdaptor adaptor = new PlaceAdaptor(this, places);
 

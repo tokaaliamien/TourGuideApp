@@ -8,4 +8,29 @@
     <string name="phone">Phone</string>
     <string name="rating">Rating</string>
 
+    <string name="hotels_four_seasons_hotel_name">Four Seasons Hotel</string>
+    <string name="hotels_four_seasons_hotel_add">399 El Geish Road San Stefano</string>
+    <string name="hotels_four_seasons_hotel_phone">1-866-599-6674</string>
+    <string name="hotels_romance_alexandria_corniche_name">Romance Alexandria Corniche</string>
+    <string name="hotels_romance_alexandria_corniche_add">303 Tareek El Gueish Saba Pasha</string>
+    <string name="hotels_romance_alexandria_corniche_phone">1-866-599-6674</string>
+
+    <string name="beaches_stanli_beach_name">Stanli Beach</string>
+    <string name="beaches_stanli_beach_add">Qism Sidi Gabir</string>
+
+    <string name="places_bibliotheca_alexandrina_name">Bibliotheca Alexandrina</string>
+    <string name="places_bibliotheca_alexandrina_add">Al Azaritah WA Ash Shatebi, Qesm Bab Sharqi</string>
+    <string name="places_citadel_of_qaitbay_name">Citadel of Qaitbay</string>
+    <string name="places_citadel_of_qaitbay_add">As Sayalah Sharq, Qesm Al Gomrok</string>
+
+    <string name="restaurants_mohammed_ahmed_name">Mohammed Ahmed</string>
+    <string name="restaurants_mohammed_ahmed_add">17 Sharia Shakor Pasha</string>
+    <string name="restaurants_kadoura_name">Kadoura</string>
+    <string name="restaurants_kadoura_add">33 Sharia Bairam at-Tonsi</string>
+    <string name="restaurants_gad_name">Gad</string>
+    <string name="restaurants_gad_add">Sharia Saad Zaghloul</string>
+    <string name="restaurants_taverna_name">Taverna</string>
+    <string name="restaurants_taverna_add">Mahattat Ramla</string>
+
+
 </resources>
