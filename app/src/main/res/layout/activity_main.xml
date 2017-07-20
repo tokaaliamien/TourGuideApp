@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.example.android.tourguideapp.MainActivity"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.0"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/historical_places_layout">
+
+
+            <ImageView
+                style="@style/categories_imgs"
+                android:src="@drawable/places_abu_abbas_mosque"/>
+            <TextView
+                android:text="@string/historical_places"
+                style="@style/categories_titles"
+                />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/restaurants_layout">
+
+            <ImageView
+                android:src="@drawable/resturant_cover"
+                style="@style/categories_imgs"/>
+
+            <TextView
+                android:text="@string/restaurants"
+                style="@style/categories_titles"
+                />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/hotels_layout">
+
+
+            <ImageView
+                style="@style/categories_imgs"
+                android:src="@drawable/hotels_san_stefano"/>
+
+            <TextView
+                android:text="@string/hotels"
+                style="@style/categories_titles"
+                />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/beaches_layout">
+
+            <ImageView
+                android:layout_width="match_parent"
+
+                android:layout_height="match_parent"
+                android:background="@drawable/beach_cover"/>
+
+            <TextView
+                android:text="@string/beaches"
+                style="@style/categories_titles"
+                />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+</LinearLayout>

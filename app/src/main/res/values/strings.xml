@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Tour Guide App</string>
+    <string name="historical_places">Historical Places</string>
+    <string name="restaurants">Restaurants</string>
+    <string name="hotels">Hotels</string>
+    <string name="beaches">Beaches</string>
+    <string name="address">Address</string>
+    <string name="phone">Phone</string>
+
+</resources>
