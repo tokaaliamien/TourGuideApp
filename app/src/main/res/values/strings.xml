@@ -6,5 +6,6 @@
     <string name="beaches">Beaches</string>
     <string name="address">Address</string>
     <string name="phone">Phone</string>
+    <string name="rating">Rating</string>
 
 </resources>

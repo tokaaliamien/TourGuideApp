@@ -10,11 +10,13 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.ImageView;
+import android.widget.RatingBar;
 import android.widget.TextView;
 
 import java.util.ArrayList;
 
 import static android.R.attr.resource;
+import static android.R.attr.width;
 
 /**
  * Created by Demo on 2017-07-20.
@@ -47,6 +49,8 @@ public class PlaceAdaptor extends ArrayAdapter {
         if (currentPlace.has_img()) {
             Log.e("P",currentPlace.getImg()+"");
             imageView.setImageResource(currentPlace.getImg());
+            //imageView.setImageBitmap(decodeSampleBitmapFromResource(currentPlace.getImg(),imageView.getWidth(), imageView.getHeight()));
+
             imageView.setVisibility(View.VISIBLE);
 
         } else{
@@ -56,13 +60,30 @@ public class PlaceAdaptor extends ArrayAdapter {
         Log.e("HH",currentPlace.getImg()+"");
 
         TextView phoneTextView = (TextView) listItemView.findViewById(R.id.phone);
+        TextView phoneLable = (TextView) listItemView.findViewById(R.id.phone_label);
 
 
         if (currentPlace.has_phone()) {
             phoneTextView.setText(currentPlace.getPhone());
-            imageView.setVisibility(View.VISIBLE);
+            phoneTextView.setVisibility(View.VISIBLE);
+            phoneLable.setVisibility(View.VISIBLE);
+
         } else {
-            imageView.setVisibility(View.GONE);
+            phoneTextView.setVisibility(View.GONE);
+            phoneLable.setVisibility(View.GONE);
+        }
+
+        RatingBar ratingBar = (RatingBar) listItemView.findViewById(R.id.ratingBar);
+        TextView rateLable = (TextView) listItemView.findViewById(R.id.ratingBar_label);
+
+        if (currentPlace.has_rate()) {
+            ratingBar.setRating(currentPlace.getRating());
+            ratingBar.setVisibility(View.VISIBLE);
+            rateLable.setVisibility(View.VISIBLE);
+
+        } else {
+            ratingBar.setVisibility(View.GONE);
+            rateLable.setVisibility(View.GONE);
         }
 
 

@@ -10,14 +10,15 @@
         android:layout_weight="1">
 
         <ImageView
-            style="@style/categories_imgs"
             android:id="@+id/list_item_img"
+            style="@style/categories_imgs"
+            android:maxHeight="30dp"
             />
 
         <TextView
-            android:text="Name"
-            style="@style/list_item_text"
             android:id="@+id/name"
+            style="@style/list_item_text"
+            android:text="Name"
 
 
             />
@@ -31,28 +32,46 @@
 
         <TextView
 
+            style="@style/list_item_title"
             android:text="@string/address"
-            style="@style/list_item_title"
             />
 
         <TextView
 
-            android:text="35 edfo street...."
-            style="@style/list_item_details"
             android:id="@+id/address"
-            />
-
-        <TextView
-
-            android:text="@string/phone"
-            style="@style/list_item_title"
-            />
-
-        <TextView
-
-            android:text="1234567"
             style="@style/list_item_details"
+            android:text="35 edfo street...."
+            />
+
+        <TextView
+
+            android:id="@+id/phone_label"
+            style="@style/list_item_title"
+            android:text="@string/phone"
+            />
+
+        <TextView
+
             android:id="@+id/phone"
+            style="@style/list_item_details"
+            android:text="1234567" />
+
+        <TextView
+
+            android:id="@+id/ratingBar_label"
+            style="@style/list_item_title"
+            android:text="@string/rating" />
+
+        <RatingBar
+            android:id="@+id/ratingBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:isIndicator="true"
+            android:numStars="5"
+            android:rating="4"
+            android:stepSize="0.5"
+
             />
 
 

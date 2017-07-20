@@ -16,9 +16,8 @@ public class HistoricalPlacesActivity extends AppCompatActivity {
 
         ArrayList<Place> places=new ArrayList<>();
         places.add(new Place("Bibliotheca Alexandrina"," Al Azaritah WA Ash Shatebi, Qesm Bab Sharqi",R.drawable.places_bibliotheca_alexandrina));
-        //places.add(new Place("Citadel of Qaitbay","As Sayalah Sharq, Qesm Al Gomrok",R.drawable.places_citadel_qaitbay));
-        //places.add(new Place("Abu al-Abbas al-Mursi Mosque","Qesm Al Gomrok",R.drawable.places_abu_abbas_mosque));
-        //places.add(new Place("Montaza Palace"," Al Mandarah Bahri, Qism El-Montaza",R.drawable.places_montaza_palace));
+        places.add(new Place("Citadel of Qaitbay", "As Sayalah Sharq, Qesm Al Gomrok", R.drawable.places_citadel_qaitbay));
+
 
         PlaceAdaptor adaptor =new PlaceAdaptor(HistoricalPlacesActivity.this,places);
 
